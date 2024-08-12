@@ -1,0 +1,132 @@
+.follow-conect{
+    margin: 5px;
+    width: 40%; 
+}
+
+.icons {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.icons a .layer {
+    height: 30px; 
+    width: 30px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.icons a .layer:hover {
+    transform: rotate(-35deg) skew(20deg);
+}
+
+.icons a .layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px; 
+    width: 30px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.icons a .layer .fab{
+    border: 1px solid blue;
+}
+
+
+
+.icons a .layer span.fab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+    width: 30px;
+}
+
+.icons a .layer span .facebook-icon  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icons a .layer span.fab {
+    font-size: 30px;
+    line-height: 55px;
+    text-align: center;
+}
+
+
+
+
+
+.facebook {
+    color: blue;
+}
+
+.instagram {
+    color: purple;
+}
+
+
+.icons a .layer span.ins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; 
+    width: 30px;
+}
+
+
+.icons a .layer span.ins .instagram-icon {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+.icons a .layer .ins{
+    border: 1px solid purple;
+}
+
+
+
+
+.icons a:hover .layer span:nth-child(1) {
+    opacity: 0.8;
+}
+
+.icons a:hover .layer span:nth-child(2) {
+    opacity: 0.6;
+    transform: translate(-3px, -3px);
+}
+
+.icons a:hover .layer span:nth-child(3) {
+    opacity: 0.4;
+    transform: translate(-6px, -6px);
+}
+
+.icons a:hover .layer span:nth-child(4) {
+    opacity: 0.2;
+    transform: translate(-9px, -9px);
+}
+
+.icons a {
+    text-decoration: none;
+    margin-top: 0;
+    margin-right: 1.5rem;
+}
+
+.icons a:hover .text {
+    visibility: visible; 
+    opacity: 1; 
+}
+ 
+.text {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.3s linear; 
+    position: absolute;
+}
